@@ -1,0 +1,7 @@
+/*
+ *  サンプルプログラム(1)のシステムコンフィギュレーションファイル
+ */
+
+#include "task_test.h"
+
+CRE_TSK(TASK1, { TA_NULL, 1, task1, HIGH_PRIORITY, STACK_SIZE, NULL });

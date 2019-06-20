@@ -1,0 +1,20 @@
+/*
+ *  ターゲット依存の定義
+ */
+#include "target_test.h"
+
+/*
+ *  各タスクの優先度の定義: Dinh nghia do uu tien cua Task
+ */
+
+#define HIGH_PRIORITY	9		/* 並行実行されるタスクの優先度 */
+#define MID_PRIORITY	10
+#define LOW_PRIORITY	11
+
+/*
+ *  関数のプロトタイプ宣言
+ */
+#ifndef TOPPERS_MACRO_ONLY
+extern void	task(intptr_t exinf);
+
+#endif /* TOPPERS_MACRO_ONLY */

@@ -1,0 +1,11 @@
+/*
+ *  サンプルプログラム(1)のシステムコンフィギュレーションファイル
+ */
+
+INCLUDE("target_timer.cfg");
+INCLUDE("syssvc/syslog.cfg");
+INCLUDE("syssvc/banner.cfg");
+INCLUDE("syssvc/serial.cfg");
+INCLUDE("syssvc/logtask.cfg");
+
+#include "target_test.h"

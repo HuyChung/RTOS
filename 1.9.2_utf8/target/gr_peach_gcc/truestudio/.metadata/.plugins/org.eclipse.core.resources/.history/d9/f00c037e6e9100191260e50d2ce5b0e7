@@ -1,0 +1,10 @@
+/*
+ *  サンプルプログラム(1)のシステムコンフィギュレーションファイル
+ */
+INCLUDE("sample1.cfg");
+
+#include "task_test.h"
+
+CRE_TSK(TASK1, { TA_NULL, 1, task1, HIGH_PRIORITY, STACK_SIZE, NULL });
+CRE_TSK(TASK2, { TA_NULL, 2, task2, MID_PRIORITY, STACK_SIZE, NULL });
+CRE_TSK(TASK3, { TA_NULL, 3, task3, LOW_PRIORITY, STACK_SIZE, NULL });
