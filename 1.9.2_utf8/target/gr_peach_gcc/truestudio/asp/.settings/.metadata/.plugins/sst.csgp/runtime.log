@@ -1,0 +1,10 @@
+
+------------------------------------
+  Logging start.  ## CURRENT TIME  : [6/21, 2019   8:28  6.22]  ## COMMAND LINE  : 
+cmd /C "gen_csini.exe"
+------------------------------------
+[STD-IN] : C:\Users\chung.CENTER\Project_CHUNG\Topper_RTOS\1.9.2_utf8\target\gr_peach_gcc\truestudio\asp\.settings\.metadata\.plugins\sst.csgp\bin\env_vars.txt
+GUI is waiting for subprocess to be done...
+Execution done. EXIT CODE = 0
+  Logging finished.  ## CURRENT TIME  : [6/21, 2019   8:28  11.287]
+------------------------------------
