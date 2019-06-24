@@ -19,7 +19,7 @@
 <stringAttribute key="com.atollic.hardwaredebug.launch.jtagDevice" value="OpenOCD"/>
 <intAttribute key="com.atollic.hardwaredebug.launch.portNumber" value="3333"/>
 <stringAttribute key="com.atollic.hardwaredebug.launch.remoteCommand" value="target remote"/>
-<stringAttribute key="com.atollic.hardwaredebug.launch.runCommands" value="monitor init&#13;&#10;monitor reset&#13;&#10;monitor halt&#13;&#10;&#13;&#10;# Release L2 cache standby&#13;&#10;set {unsigned int}0x3fffff80=0x00000001&#13;&#10;&#13;&#10;# Allow write access for RAM     &#13;&#10;set {unsigned char}0xfcfe0400=0x3f&#13;&#10;x/b 0xfcfe0400&#13;&#10;set {unsigned char}0xfcfe0404=0x3f&#13;&#10;x/b 0xfcfe0404&#13;&#10;set {unsigned char}0xfcfe0408=0x0f&#13;&#10;x/b 0xfcfe0408&#13;&#10;&#13;&#10;load&#13;&#10;&#13;&#10;#tbreak start&#13;&#10;&#13;&#10;#continue"/>
+<stringAttribute key="com.atollic.hardwaredebug.launch.runCommands" value="monitor init&#13;&#10;monitor reset&#13;&#10;monitor halt&#13;&#10;"/>
 <stringAttribute key="com.atollic.hardwaredebug.launch.serverParam" value="-f ./scripts/interface/cmsis-dap.cfg -f ./scripts/target/renesas_rza1h_swd.cfg "/>
 <booleanAttribute key="com.atollic.hardwaredebug.launch.startServer" value="true"/>
 <booleanAttribute key="com.atollic.hardwaredebug.launch.swd_mode" value="true"/>

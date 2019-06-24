@@ -1,6 +1,0 @@
-/*
- *  サンプルプログラム(1)のシステムコンフィギュレーションファイル
- */
-#include "sem_test.h"
-
-CRE_SEM(SEM11, { TA_NULL, 1, task, HIGH_PRIORITY, STACK_SIZE, NULL });

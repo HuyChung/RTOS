@@ -35,11 +35,6 @@
 			<locationURI>PARENT-4-PROJECT_LOC/README.txt</locationURI>
 		</link>
 		<link>
-			<name>app</name>
-			<type>2</type>
-			<location>C:/Users/chung.CENTER/Project_CHUNG/Topper_RTOS/1.9.2_utf8/app</location>
-		</link>
-		<link>
 			<name>arch</name>
 			<type>2</type>
 			<locationURI>virtual:/virtual</locationURI>
