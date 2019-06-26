@@ -155,7 +155,7 @@ CFLAGS = $(COPTS) $(CDEFS) $(INCLUDES)
 #  アプリケーションプログラムに関する定義
 #
 APPLNAME = sample1
-APPLDIR = 
+APPLDIR = ./app
 APPL_CFG = $(APPLNAME).cfg
 
 APPL_DIR = $(APPLDIR) $(SRCDIR)/library
@@ -166,7 +166,7 @@ ifdef USE_CXX
 else
   APPL_COBJS = $(APPLNAME).o 
 endif
-APPL_COBJS := $(APPL_COBJS) log_output.o vasyslog.o t_perror.o strerror.o
+APPL_COBJS := $(APPL_COBJS) log_output.o vasyslog.o t_perror.o strerror.o task_test.o
 APPL_CFLAGS =
 APPL_LIBS =
 ifdef APPLDIR

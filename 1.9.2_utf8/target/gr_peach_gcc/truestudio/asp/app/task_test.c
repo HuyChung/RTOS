@@ -4,8 +4,8 @@
 #include "kernel_cfg.h"
 #include "syssvc/syslog.h"
 
-#include "syssvc/task_test.h"
-
+#include "task_test.h"
+#include "sample1.h"
 /*
  *  並行実行されるタスク
  */

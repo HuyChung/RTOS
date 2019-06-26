@@ -81,13 +81,33 @@
  */
 #ifndef TOPPERS_MACRO_ONLY
 
-extern void	task(intptr_t exinf);
 extern void	main_task(intptr_t exinf);
-extern void	tex_routine(TEXPTN texptn, intptr_t exinf);
 #ifdef CPUEXC1
 extern void	cpuexc_handler(void *p_excinf);
 #endif /* CPUEXC1 */
-extern void	cyclic_handler(intptr_t exinf);
-extern void	alarm_handler(intptr_t exinf);
 
 #endif /* TOPPERS_MACRO_ONLY */
+
+/*
+ *  サービスコールのエラーのログ出力
+ */
+Inline void
+svc_perror(const char *file, int_t line, const char *expr, ER ercd)
+{
+	if (ercd < 0) {
+		t_perror(LOG_ERROR, file, line, expr, ercd);
+	}
+}
+
+#define	SVC_PERROR(expr)	svc_perror(__FILE__, __LINE__, #expr, (expr))
+
+/*
+ *  並行実行されるタスクへのメッセージ領域
+ */
+char	message[3];
+
+/*
+ *  ループ回数
+ */
+ulong_t	task_loop;		/* タスク内でのループ回数 */
+ulong_t	tex_loop;		/* 例外処理ルーチン内でのループ回数 */

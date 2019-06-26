@@ -111,92 +111,11 @@
 #include "syssvc/serial.h"
 #include "syssvc/syslog.h"
 #include "kernel_cfg.h"
+
+#include "app/task_test.h"
 #include "sample1.h"
 
-/*
- *  サービスコールのエラーのログ出力
- */
-Inline void
-svc_perror(const char *file, int_t line, const char *expr, ER ercd)
-{
-	if (ercd < 0) {
-		t_perror(LOG_ERROR, file, line, expr, ercd);
-	}
-}
 
-#define	SVC_PERROR(expr)	svc_perror(__FILE__, __LINE__, #expr, (expr))
-
-/*
- *  並行実行されるタスクへのメッセージ領域
- */
-char	message[3];
-
-/*
- *  ループ回数
- */
-ulong_t	task_loop;		/* タスク内でのループ回数 */
-ulong_t	tex_loop;		/* 例外処理ルーチン内でのループ回数 */
-
-/*
- *  並行実行されるタスク
- */
-void task(intptr_t exinf)
-{
-	volatile ulong_t	i;
-	int_t		n = 0;
-	int_t		tskno = (int_t) exinf;
-	const char	*graph[] = { "|", "  +", "    *" };
-	char		c;
-
-	SVC_PERROR(ena_tex());
-	while (true) {
-		syslog(LOG_NOTICE, "task%d is running (%03d).   %s",
-										tskno, ++n, graph[tskno-1]);
-		for (i = 0; i < task_loop; i++);
-		c = message[tskno-1];
-		message[tskno-1] = 0;
-		switch (c) {
-		case 'e':
-			syslog(LOG_INFO, "#%d#ext_tsk()", tskno);
-			SVC_PERROR(ext_tsk());
-			assert(0);
-		case 's':
-			syslog(LOG_INFO, "#%d#slp_tsk()", tskno);
-			SVC_PERROR(slp_tsk());
-			break;
-		case 'S':
-			syslog(LOG_INFO, "#%d#tslp_tsk(10000)", tskno);
-			SVC_PERROR(tslp_tsk(10000));
-			break;
-		case 'd':
-			syslog(LOG_INFO, "#%d#dly_tsk(10000)", tskno);
-			SVC_PERROR(dly_tsk(10000));
-			break;
-		case 'y':
-			syslog(LOG_INFO, "#%d#dis_tex()", tskno);
-			SVC_PERROR(dis_tex());
-			break;
-		case 'Y':
-			syslog(LOG_INFO, "#%d#ena_tex()", tskno);
-			SVC_PERROR(ena_tex());
-			break;
-#ifdef CPUEXC1
-		case 'z':
-			syslog(LOG_NOTICE, "#%d#raise CPU exception", tskno);
-			RAISE_CPU_EXCEPTION;
-			break;
-		case 'Z':
-			SVC_PERROR(loc_cpu());
-			syslog(LOG_NOTICE, "#%d#raise CPU exception", tskno);
-			RAISE_CPU_EXCEPTION;
-			SVC_PERROR(unl_cpu());
-			break;
-#endif /* CPUEXC1 */
-		default:
-			break;
-		}
-	}
-}
 
 /*
  *  並行して実行されるタスク用のタスク例外処理ルーチン
@@ -473,19 +392,19 @@ void main_task(intptr_t exinf)
 			break;
 		case 'c':
 			syslog(LOG_INFO, "#sta_cyc(1)");
-			SVC_PERROR(sta_cyc(CYCHDR1));
+			//SVC_PERROR(sta_cyc(CYCHDR1));
 			break;
 		case 'C':
 			syslog(LOG_INFO, "#stp_cyc(1)");
-			SVC_PERROR(stp_cyc(CYCHDR1));
+			//SVC_PERROR(stp_cyc(CYCHDR1));
 			break;
 		case 'b':
 			syslog(LOG_INFO, "#sta_alm(1, 5000)");
-			SVC_PERROR(sta_alm(ALMHDR1, 5000));
+			//SVC_PERROR(sta_alm(ALMHDR1, 5000));
 			break;
 		case 'B':
 			syslog(LOG_INFO, "#stp_alm(1)");
-			SVC_PERROR(stp_alm(ALMHDR1));
+			//SVC_PERROR(stp_alm(ALMHDR1));
 			break;
 
 		case 'V':
