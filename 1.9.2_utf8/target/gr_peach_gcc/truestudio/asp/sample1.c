@@ -113,6 +113,8 @@
 #include "kernel_cfg.h"
 
 #include "app/task_test.h"
+#include "app/sem_test.h"
+
 #include "sample1.h"
 
 

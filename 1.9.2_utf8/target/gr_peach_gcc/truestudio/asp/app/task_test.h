@@ -10,3 +10,6 @@
  *  関数のプロトタイプ宣言
  */
 extern void	task(intptr_t exinf);
+
+
+

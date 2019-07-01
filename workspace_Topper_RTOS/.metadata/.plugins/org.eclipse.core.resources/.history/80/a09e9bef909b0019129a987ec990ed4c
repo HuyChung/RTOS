@@ -1,0 +1,7 @@
+/*
+ *  サンプルプログラム(1)のシステムコンフィギュレーションファイル
+ */
+#include "sem_test.h"
+
+CRE_SEM(semid, { sematr, isemcnt, maxsem });
+CRE_SEM(SEM1, { TA_NULL, 0, 1 });

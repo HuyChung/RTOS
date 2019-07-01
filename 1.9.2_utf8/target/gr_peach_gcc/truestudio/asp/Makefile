@@ -166,7 +166,7 @@ ifdef USE_CXX
 else
   APPL_COBJS = $(APPLNAME).o 
 endif
-APPL_COBJS := $(APPL_COBJS) log_output.o vasyslog.o t_perror.o strerror.o task_test.o
+APPL_COBJS := $(APPL_COBJS) log_output.o vasyslog.o t_perror.o strerror.o task_test.o sem_test.o
 APPL_CFLAGS =
 APPL_LIBS =
 ifdef APPLDIR
