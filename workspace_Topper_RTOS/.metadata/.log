@@ -5612,3 +5612,6 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 2019/07/01 09:27:32
 ---------------------------------------------------
 
+
+!ENTRY com.atollic.truestudio.productmanager 1 0 2019-07-01 09:55:23.040
+!MESSAGE Unloading product manager
