@@ -294,6 +294,12 @@ void main_task(intptr_t exinf)
 	SVC_PERROR(act_tsk(TASK3));
 
 	/*
+	 *  セマンフォを実行するためタスクの起動
+	 */
+	SVC_PERROR(act_tsk(TASK4));
+	SVC_PERROR(act_tsk(TASK5));
+
+	/*
  	 *  メインループ
 	 */
 	do {
@@ -321,6 +327,12 @@ void main_task(intptr_t exinf)
 			tskno = 3;
 			tskid = TASK3;
 			break;
+		case '4':
+			tskno = 4;
+			tskid = TASK4;
+		case '5':
+			tskno = 5;
+			tskid = TASK5;
 		case 'a':
 			syslog(LOG_INFO, "#act_tsk(%d)", tskno);
 			SVC_PERROR(act_tsk(tskid));

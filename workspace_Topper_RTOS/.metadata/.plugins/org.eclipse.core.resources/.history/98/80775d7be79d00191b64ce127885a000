@@ -1,0 +1,12 @@
+
+/*
+ *  関数のプロトタイプ宣言
+ */
+
+extern void	taskSend(intptr_t exinf);
+extern void	taskReceive(intptr_t exinf);
+
+/*
+ *  並行実行されるタスクへのメッセージ領域
+ */
+char	buffer[3];
