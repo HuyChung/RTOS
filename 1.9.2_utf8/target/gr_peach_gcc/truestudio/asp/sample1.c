@@ -330,9 +330,11 @@ void main_task(intptr_t exinf)
 		case '4':
 			tskno = 4;
 			tskid = TASK4;
+			break;
 		case '5':
 			tskno = 5;
 			tskid = TASK5;
+			break;
 		case 'a':
 			syslog(LOG_INFO, "#act_tsk(%d)", tskno);
 			SVC_PERROR(act_tsk(tskid));

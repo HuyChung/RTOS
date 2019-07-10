@@ -460,6 +460,11 @@
 			<locationURI>PARENT-4-PROJECT_LOC/library/strerror.c</locationURI>
 		</link>
 		<link>
+			<name>library/t_perror.h</name>
+			<type>1</type>
+			<locationURI>PARENT-4-PROJECT_LOC/library/t_perror.h</locationURI>
+		</link>
+		<link>
 			<name>library/t_perror.c</name>
 			<type>1</type>
 			<locationURI>PARENT-4-PROJECT_LOC/library/t_perror.c</locationURI>

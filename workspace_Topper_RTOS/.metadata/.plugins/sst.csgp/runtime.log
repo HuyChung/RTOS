@@ -48,3 +48,83 @@ GUI is waiting for subprocess to be done...
 Execution done. EXIT CODE = 0
   Logging finished.  ## CURRENT TIME  : [7/4, 2019   7:50  43.972]
 ------------------------------------
+
+------------------------------------
+  Logging start.  ## CURRENT TIME  : [7/4, 2019   10:16  28.371]  ## COMMAND LINE  : 
+cmd /C "gen_csini.exe"
+------------------------------------
+[STD-IN] : C:\Users\chung.CENTER\Project_CHUNG\Topper_RTOS\workspace_Topper_RTOS\.metadata\.plugins\sst.csgp\bin\env_vars.txt
+GUI is waiting for subprocess to be done...
+Execution done. EXIT CODE = 0
+  Logging finished.  ## CURRENT TIME  : [7/4, 2019   10:16  33.742]
+------------------------------------
+
+------------------------------------
+  Logging start.  ## CURRENT TIME  : [7/4, 2019   14:21  56.542]  ## COMMAND LINE  : 
+cmd /C "gen_csini.exe"
+------------------------------------
+[STD-IN] : C:\Users\chung.CENTER\Project_CHUNG\Topper_RTOS\workspace_Topper_RTOS\.metadata\.plugins\sst.csgp\bin\env_vars.txt
+GUI is waiting for subprocess to be done...
+Execution done. EXIT CODE = 0
+  Logging finished.  ## CURRENT TIME  : [7/4, 2019   14:22  1.73]
+------------------------------------
+
+------------------------------------
+  Logging start.  ## CURRENT TIME  : [7/5, 2019   7:17  11.138]  ## COMMAND LINE  : 
+cmd /C "gen_csini.exe"
+------------------------------------
+[STD-IN] : C:\Users\chung.CENTER\Project_CHUNG\Topper_RTOS\workspace_Topper_RTOS\.metadata\.plugins\sst.csgp\bin\env_vars.txt
+GUI is waiting for subprocess to be done...
+Execution done. EXIT CODE = 0
+  Logging finished.  ## CURRENT TIME  : [7/5, 2019   7:17  15.254]
+------------------------------------
+
+------------------------------------
+  Logging start.  ## CURRENT TIME  : [7/5, 2019   11:7  26.102]  ## COMMAND LINE  : 
+cmd /C "gen_csini.exe"
+------------------------------------
+[STD-IN] : C:\Users\chung.CENTER\Project_CHUNG\Topper_RTOS\workspace_Topper_RTOS\.metadata\.plugins\sst.csgp\bin\env_vars.txt
+GUI is waiting for subprocess to be done...
+Execution done. EXIT CODE = 0
+  Logging finished.  ## CURRENT TIME  : [7/5, 2019   11:7  29.867]
+------------------------------------
+
+------------------------------------
+  Logging start.  ## CURRENT TIME  : [7/8, 2019   7:15  39.36]  ## COMMAND LINE  : 
+cmd /C "gen_csini.exe"
+------------------------------------
+[STD-IN] : C:\Users\chung.CENTER\Project_CHUNG\Topper_RTOS\workspace_Topper_RTOS\.metadata\.plugins\sst.csgp\bin\env_vars.txt
+GUI is waiting for subprocess to be done...
+Execution done. EXIT CODE = 0
+  Logging finished.  ## CURRENT TIME  : [7/8, 2019   7:15  42.999]
+------------------------------------
+
+------------------------------------
+  Logging start.  ## CURRENT TIME  : [7/8, 2019   7:16  49.306]  ## COMMAND LINE  : 
+cmd /C "gen_csini.exe"
+------------------------------------
+[STD-IN] : C:\Users\chung.CENTER\Project_CHUNG\Topper_RTOS\workspace_Topper_RTOS\.metadata\.plugins\sst.csgp\bin\env_vars.txt
+GUI is waiting for subprocess to be done...
+Execution done. EXIT CODE = 0
+  Logging finished.  ## CURRENT TIME  : [7/8, 2019   7:16  52.998]
+------------------------------------
+
+------------------------------------
+  Logging start.  ## CURRENT TIME  : [7/10, 2019   13:20  29.781]  ## COMMAND LINE  : 
+cmd /C "gen_csini.exe"
+------------------------------------
+[STD-IN] : C:\Users\chung.CENTER\Project_CHUNG\Topper_RTOS\workspace_Topper_RTOS\.metadata\.plugins\sst.csgp\bin\env_vars.txt
+GUI is waiting for subprocess to be done...
+Execution done. EXIT CODE = 0
+  Logging finished.  ## CURRENT TIME  : [7/10, 2019   13:20  34.344]
+------------------------------------
+
+------------------------------------
+  Logging start.  ## CURRENT TIME  : [7/11, 2019   8:36  14.289]  ## COMMAND LINE  : 
+cmd /C "gen_csini.exe"
+------------------------------------
+[STD-IN] : C:\Users\chung.CENTER\Project_CHUNG\Topper_RTOS\workspace_Topper_RTOS\.metadata\.plugins\sst.csgp\bin\env_vars.txt
+GUI is waiting for subprocess to be done...
+Execution done. EXIT CODE = 0
+  Logging finished.  ## CURRENT TIME  : [7/11, 2019   8:36  19.743]
+------------------------------------

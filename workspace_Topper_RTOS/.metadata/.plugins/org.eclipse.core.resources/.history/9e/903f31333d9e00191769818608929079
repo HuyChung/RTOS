@@ -1,0 +1,10 @@
+/*
+ *  サンプルプログラム(1)のシステムコンフィギュレーションファイル
+ */
+#include "sem_test.h"
+
+//CRE_SEM(semid, { sematr, isemcnt, maxsem });
+CRE_SEM(SEM1, { TA_NULL, 0, 10 });
+
+CRE_TSK(TASK4, { TA_NULL, 4, taskSend, MID_PRIORITY, STACK_SIZE, NULL });
+CRE_TSK(TASK5, { TA_NULL, 5, taskReceive, MID_PRIORITY, STACK_SIZE, NULL });

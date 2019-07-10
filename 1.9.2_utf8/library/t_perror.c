@@ -46,6 +46,7 @@
 #include <t_stddef.h>
 #include <t_syslog.h>
 #include <t_stdlib.h>
+#include "t_perror.h"
 
 void
 t_perror(uint_t prio, const char *file, int_t line, const char *expr, ER ercd)
